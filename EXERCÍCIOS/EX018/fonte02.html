@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'extra';
+            src: url('Vaseline\ Extra.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            https://www.dafont.com/ site para procurar fontes além do google
+            tipos de format()
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -truetype-aat (apple advanced typography
+            
+            criar uma pasta "fonts" para colocar as fontes
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'extra';
+        }
+    </style>
+</head>
+<body>
+    <h1>título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ea illum provident id eaque soluta debitis placeat, molestias esse quibusdam ipsum adipisci, delectus pariatur nobis rerum earum. Ad, quam esse.</p>
+</body>
+</html>

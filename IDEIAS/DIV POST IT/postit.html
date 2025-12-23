@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div post it</title>
+    <style>
+        .post-it {
+  position: relative;
+  width: 250px;
+  padding: 20px;
+  background: #fff3a0; /* amarelo típico de post-it */
+  color: #333;
+  font-family: Arial, sans-serif;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Canto dobrado */
+.post-it::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  border-left: 25px solid #e6d96c; /* sombra do papel dobrado */
+  border-top: 25px solid transparent;
+}
+    </style>
+</head>
+<body>
+    <div class="post-it">
+        <h3>modelo</h3>
+        <p>Não esquecer de revisar o layout!</p>
+    </div>
+</body>
+</html>
