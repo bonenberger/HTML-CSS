@@ -11,7 +11,7 @@ img {
 }
 
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 0px;
 }
 a {
     box-sizing: border-box;
