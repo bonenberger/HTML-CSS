@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rafael Bonenberger | Conteúdo & Tecnologia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0a0f1f;
+      --bg-alt: #11183a;
+      --primary: #00f5ff;
+      --secondary: #7f8cff;
+      --text: #e6e6eb;
+      --muted: #9aa0c7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #11183a, #050713);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--secondary);
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .content {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    /* Grid genérico */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #11183a, #0a0f1f);
+      border: 1px solid rgba(0,245,255,0.15);
+      border-radius: 14px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent, rgba(0,245,255,0.15), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(0,245,255,0.15);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border 0.3s ease;
+    }
+
+    .read-more:hover {
+      border-bottom: 1px solid var(--primary);
+    }
+
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer span {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Rafael Bonenberger</h1>
+    <p>
+      Conteúdo, tecnologia e projetos digitais.  
+      Ideias, experimentos e conhecimento compartilhado.
+    </p>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <section>
+    <h2>Conteúdo</h2>
+    <div class="content">
+      <p>
+        Este site reúne artigos, projetos e estudos sobre tecnologia, inovação,
+        automação, dados e aplicações práticas no mundo real.
+      </p>
+    </div>
+  </section>
+
+  <!-- ARTIGOS -->
+  <section>
+    <h2>Artigos</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="meta">Tecnologia • Jan 2026</div>
+        <h3>Como a tecnologia está mudando a forma de criar conteúdo</h3>
+        <p>
+          Uma análise prática sobre ferramentas, automação e inteligência artificial
+          aplicadas à criação de conteúdo digital.
+        </p>
+        <a href="#" class="read-more">Ler artigo →</a>
+      </article>
+
+      <article class="card">
+        <div class="meta">Inovação • Jan 2026</div>
+        <h3>Automação no dia a dia: menos esforço, mais resultado</h3>
+        <p>
+          Exemplos reais de como pequenas automações podem gerar grandes ganhos
+          de produtividade.
+        </p>
+        <a href="#" class="read-more">Ler artigo →</a>
+      </article>
+
+      <article class="card">
+        <div class="meta">Futuro • Jan 2026</div>
+        <h3>O futuro dos projetos digitais pessoais</h3>
+        <p>
+          Por que projetos autorais estão se tornando ativos valiosos
+          na carreira e nos negócios.
+        </p>
+        <a href="#" class="read-more">Ler artigo →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section>
+    <h2>Projetos & Portfólio</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Projeto 01</h3>
+        <p>Plataforma ou solução focada em tecnologia e inovação.</p>
+      </div>
+
+      <div class="card">
+        <h3>Projeto 02</h3>
+        <p>Automação, dados ou produto digital experimental.</p>
+      </div>
+
+      <div class="card">
+        <h3>Projeto 03</h3>
+        <p>Projeto pessoal com foco em conteúdo e aplicações práticas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span>Rafael Bonenberger</span> — Conteúdo, tecnologia e futuro.
+  </footer>
+
+</body>
+</html>
