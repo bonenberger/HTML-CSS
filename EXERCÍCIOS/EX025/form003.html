@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outra aula sobre input</title>
+</head>
+<body>
+    <h1>controles adicionais</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="icor">cor: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">nivel de satisfação: </label></p>
+            <input type="range" name="nivel" id="inivel" value="2" min="1" max="5">
+        <p>
+        
+        <p>
+            <label for="ifoto">Foto: </label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+
+        <!--input do tipo "file" necessita do metodo post devido ao tamanho do arquivo-->
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
