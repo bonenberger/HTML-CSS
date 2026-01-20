@@ -12,10 +12,19 @@
 </head>
 <body>
     <h1>meu primeiro formulário</h1>
-    <form action="#">
-        <p>nome: <input type="text" name="nome" id="nome"></p>
-        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" autocomplete="off" method="get">
+        <p><label for="nome">nome: </label><input type="text" name="nome" id="nome"></p>
+        <p><label for="sobrenome">sobrenome: </label><input type="text" name="sobrenome" id="sobrenome"></p>
         <p><input type="submit" value="enviar"></p>
-    </form>
+        <!--métodos:
+        o padrão é o GET, mas existe também o POST, que não exibe os dados no link da url. entretanto também não protege os dados, ainda assim é possível de vê-los
+        
+        GET: para dados não sensíveis, mantendo-os links compartilhaveis até 3000 bites (3000 letras)
+        
+        POST: dados sensíveis, dados mais de 3000 bites e envio de arquivos-->
+
+
+</form>
+    
 </body>
 </html>
