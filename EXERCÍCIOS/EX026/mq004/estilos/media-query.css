@@ -11,7 +11,31 @@ tv acima de 1200px
 */
 
 @media print {/*impressoras*/
+    * {
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: none;
+        color: black;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg);/*desnecessário*/
+    }
+    body{
+        background-image: url(../imagens/back-tablet.jpg);        
+    }
 
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: "essa impressão é proveniente do site feito pelo rafael";
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /*tablet*/
