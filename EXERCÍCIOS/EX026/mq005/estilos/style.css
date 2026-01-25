@@ -42,11 +42,29 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: #87cefa;
+    background-color: #33202a;
+    color: white;
 }
 
 body, html {
     background-color: #87cefa;
+}
+
+#burger{
+    padding: 10px;
+    display: block;
+    color: #33202a;
+    background-color: #80ada0;
+    text-align: center;
+}
+
+#burger:hover {
+    background-color: #33202a;
+    color: white;
+}
+
+menu {
+    display: none;
 }
 
 main {
